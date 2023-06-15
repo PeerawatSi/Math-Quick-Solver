@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <ctime>
+#include <cmath>
 #include "math.h"
 #include "math.cpp"
 using namespace std;
@@ -10,11 +11,16 @@ void title(string text);
 
 int main()
 {
+
     title("Math-Quick-Solver!!!");
     
-    MathSolver a;
+    while (true)
+    {
+        MathSolver a;
+        a.ask();
+    }
     
-
+    
 
     return 0;
 }
