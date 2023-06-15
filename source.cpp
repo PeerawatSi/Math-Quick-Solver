@@ -11,13 +11,18 @@ void title(string text);
 
 int main()
 {
+    int score = 0;
+    int round = 1;
 
     title("Math-Quick-Solver!!!");
     
-    while (true)
+    while (round <= 100)
     {
         MathSolver a;
-        a.ask();
+        cout << "Q" << round << " ";
+        score += a.ask();
+        round++;
+        cout << "Score "<< score << " maxed out of " << round << endl;
     }
     
     

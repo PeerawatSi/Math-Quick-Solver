@@ -16,7 +16,7 @@ class MathSolver
 
     ~MathSolver(); // Destructor O(1)
 
-    void ask(); // asking question O(1)
+    int ask(); // asking question O(1)
 
     int sum(); // sum function O(1)
 

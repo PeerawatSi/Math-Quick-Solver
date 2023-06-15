@@ -18,7 +18,7 @@ MathSolver::~MathSolver()
     delete &num2;
 }
 
-void MathSolver::ask()
+int MathSolver::ask()
 {
     int response = 0;
     int random = rand()%4 + 1;
@@ -31,8 +31,10 @@ void MathSolver::ask()
         if(response != sum())
         {
             cout << "Wrong!! \n";
+            return 0;
         }else{
             cout << "Correct!! \n";
+            return 1;
         }
         break;
 
@@ -43,8 +45,10 @@ void MathSolver::ask()
         if(response != subtract())
         {
             cout << "Wrong!! \n";
+            return 0;
         }else{
             cout << "Correct!! \n";
+            return 1;
         }
         break;
 
@@ -55,8 +59,10 @@ void MathSolver::ask()
         if(response != multi())
         {
             cout << "Wrong!! \n";
+            return 0;
         }else{
             cout << "Correct!! \n";
+            return 1;
         }
         break;
 
@@ -67,8 +73,10 @@ void MathSolver::ask()
         if(floor(response) != floor(divide()))
         {
             cout << "Wrong!! \n";
+            return 0;
         }else{
             cout << "Correct!! \n";
+            return 1;
         }
         break;
         
