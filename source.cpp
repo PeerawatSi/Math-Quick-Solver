@@ -12,20 +12,22 @@ void title(string text);
 int main()
 {
     int score = 0;
-    int round = 1;
+    int round = 0;
 
     title("Math-Quick-Solver!!!");
-    
-    while (round <= 100)
+    cout << "How many question will you solve? : ";
+    cin >> round;
+    MathSolver a;
+
+
+    for(int i = 0; i < round; i++)
     {
-        MathSolver a;
-        cout << "Q" << round << " ";
+        
+        cout << "Q" << i+1 << " ";
         score += a.ask();
-        round++;
         cout << "Score "<< score << " maxed out of " << round << endl;
+
     }
-    
-    
 
     return 0;
 }

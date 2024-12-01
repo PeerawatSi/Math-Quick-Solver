@@ -8,8 +8,8 @@ using namespace std;
 MathSolver::MathSolver()
 {
     srand(time(0));
-    num1 = rand()%100;
-    num2 = rand()%100;
+    num1 = 0;
+    num2 = 0;
 }
 
 MathSolver::~MathSolver()
@@ -21,6 +21,8 @@ MathSolver::~MathSolver()
 int MathSolver::ask()
 {
     int response = 0;
+    num1 = rand()%100;
+    num2 = rand()%100;
     int random = rand()%4 + 1;
     switch (random)
     {
