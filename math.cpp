@@ -22,7 +22,7 @@ int MathSolver::ask()
 {
     int response = 0;
     num1 = rand()%100;
-    num2 = rand()%100;
+    num2 = rand()%100 + 1;
     int random = rand()%4 + 1;
     switch (random)
     {
@@ -82,9 +82,10 @@ int MathSolver::ask()
         }
         break;
         
-    default:
-        break;
+      default:
+           break;
     }
+    return 0;
 }
 
 
